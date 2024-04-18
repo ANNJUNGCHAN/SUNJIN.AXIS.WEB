@@ -2,7 +2,7 @@ version: "3"
 
 services:
 
-  AICCTV_WEB: 
+  AXIS_WEB: 
 
     # 첫번째 컨테이너에서만 이미지를 빌드한다
     #############################
@@ -12,7 +12,7 @@ services:
     image: "streamlit:python3.9"
     #############################
 
-    container_name: AICCTV_WEB
+    container_name: AXIS_WEB
     volumes:
       - /mnt:/Drive
       - ./app:/app
